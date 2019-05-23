@@ -7,8 +7,8 @@ import { FaCartArrowDown } from "react-icons/fa"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <h1>Welcome to coffee house</h1>
+    <p>Please enjoy our awsome coffee blends</p>
     <FaCartArrowDown />
   </Layout>
 )
