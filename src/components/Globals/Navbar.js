@@ -30,6 +30,13 @@ export default class Navbar extends Component {
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" />
         </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={this.navbarHandler}
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
       </nav>
     )
   }
