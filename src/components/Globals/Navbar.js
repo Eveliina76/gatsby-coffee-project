@@ -25,9 +25,11 @@ export default class Navbar extends Component {
     return (
       <nav
         className="navbar navbar-expand-sm 
-      bg-light navbar-ligth"
+        bg-light navbar-ligth"
       >
-        hello from navbar
+        <Link to="/" className="navbar-brand">
+          <img src={logo} alt="logo" />
+        </Link>
       </nav>
     )
   }
