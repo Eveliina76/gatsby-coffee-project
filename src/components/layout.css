@@ -1,16 +1,18 @@
 :root {
-  --mainBrown: #8b4513;
-  --mainYellow: #ff9e09;
+  --thistle: #d8bfd8;
+  --plum: #8b668b;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
+  --orchid: #7a378b;
   --mainDark: #222;
 }
 
 body {
-  background: var(--mainWhite);
+  background: var(--thistle);
   color: var(--mainDark);
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
+
 h1,
 h2,
 h3,
@@ -23,18 +25,30 @@ h6 {
 .text-capitalize {
   color: var(--gray);
 }
-.text-yellow {
-  color: var(--mainYellow);
+.text-dark {
+  color: var(--mainDark);
 }
 .cart-icon {
   cursor: pointer;
-  color: var(--mainYellow);
+  color: var(--plum);
   font-size: 2rem;
 }
-h1 {
-  text-align: center;
-  margin-top: 2rem;
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5 !important;
 }
-p {
-  text-align: center;
+
+.btn-plum {
+  color: var(--plum);
+  border-color: var(--plum);
+  background-color: var(--mainWhite);
+}
+.btn-plum:hover {
+  color: var(--orchid) !important;
 }
