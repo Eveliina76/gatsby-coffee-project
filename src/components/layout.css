@@ -5,11 +5,12 @@
   --mainWhite: #fff;
   --orchid: #7a378b;
   --mainDark: #222;
+  --black: #000;
 }
 
 body {
   background: var(--thistle);
-  color: var(--mainDark);
+  color: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
@@ -22,11 +23,13 @@ h6 {
   font-family: "Courier New", Courier, monospace !important;
   letter-spacing: 0.25rem !important;
 }
-.text-capitalize {
-  color: var(--gray);
+
+.text-black {
+  color: var(--black);
 }
-.text-dark {
-  color: var(--mainDark);
+
+.text-plum {
+  color: var(--plum);
 }
 .cart-icon {
   cursor: pointer;
@@ -34,7 +37,8 @@ h6 {
   font-size: 2rem;
 }
 
-.default-background {
+.default-background,
+.about-background {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -44,6 +48,10 @@ h6 {
   opacity: 0.5 !important;
 }
 
+.about-background {
+  min-height: 80vh;
+}
+
 .btn-plum {
   color: var(--plum);
   border-color: var(--plum);
@@ -51,4 +59,8 @@ h6 {
 }
 .btn-plum:hover {
   color: var(--orchid) !important;
+}
+
+.footer {
+  background: var(--mainWhite);
 }
