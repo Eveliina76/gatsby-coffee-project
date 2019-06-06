@@ -11,8 +11,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <BackgroundSection
-      Img
-      fluid={data.img.childImageSharp.fluid}
+      Img={data.img.childImageSharp.fluid}
       title="The Little Coffee Shop"
       styleClass="default-background"
     />
@@ -26,7 +25,7 @@ export const query = graphql`
     file(relativePath: { eq: "backgroundCup.jpeg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid_tracedJPEG
         }
       }
     }
