@@ -5,6 +5,7 @@ if (process.env.ENVIRONMENT !== "production") {
 }
 
 const { spaceId, accessToken } = process.env
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
