@@ -31,13 +31,8 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        spaceId,
-        accessToken,
-      },
-    }`gatsby-transformer-sharp`,
+
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
