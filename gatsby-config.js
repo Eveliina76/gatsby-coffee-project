@@ -1,6 +1,10 @@
-require("dotenv").config({
-  path: `.env.${process.env.ENVIRONMENT}`,
-})
+const dotenv = require("dotenv")
+
+if (process.env.ENVIRONMENT !== "production") {
+  dotenv.config()
+}
+
+const { spaceId, accessToken } = process.env
 
 module.exports = {
   siteMetadata: {
@@ -9,19 +13,18 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId,
+        accessToken,
+      },
+    }`gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId,
-        accessToken,
       },
     },
 
