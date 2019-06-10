@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,7 +9,7 @@ const AboutPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <BackgroundSection
-      Img={data.img.childImageSharp.fluid}
+      img={data.img.childImageSharp.fluid}
       title="about us"
       styleClass="about-background"
     />
@@ -23,7 +22,7 @@ export const query = graphql`
     file(relativePath: { eq: "Pink-Cafe.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_tracedJPG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
