@@ -22,7 +22,7 @@ export const query = graphql`
     file(absolutePath: { eq: "../images/Pink-Cafe.jpg" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
