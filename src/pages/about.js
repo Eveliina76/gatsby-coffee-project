@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => (
   </Layout>
 )
 
-/*export const query = graphql`
+export const query = graphql`
   {
     img: file(relativePath: { eq: "Pink-Cafe.jpg" }) {
       childImageSharp {
@@ -27,6 +27,6 @@ const AboutPage = ({ data }) => (
       }
     }
   }
-`*/
+`
 
 export default AboutPage
