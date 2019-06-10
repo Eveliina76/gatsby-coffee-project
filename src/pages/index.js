@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export const query = graphql`
+/*export const query = graphql`
   {
     img: file(relativePath: { eq: "backgroundCup.jpeg" }) {
       childImageSharp {
@@ -47,6 +47,6 @@ export const query = graphql`
       }
     }
   }
-`
+`*/
 
 export default IndexPage
