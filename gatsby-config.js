@@ -1,15 +1,8 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 const dotenv = require("dotenv")
 
-if (process.env.ENVIRONMENT !== "production") {
+if (process.env.NODE_ENV !== "production") {
   dotenv.config()
 }
-
-const { spaceId, accessToken } = process.env
-const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
