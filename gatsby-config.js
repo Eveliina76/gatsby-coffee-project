@@ -8,9 +8,6 @@ if (process.env.ENVIRONMENT !== "production") {
   dotenv.config()
 }
 
-const { spaceId, accessToken } = process.env
-const path = require(`path`)
-
 module.exports = {
   siteMetadata: {
     title: `Coffee Shop`,
